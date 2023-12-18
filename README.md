@@ -1,5 +1,7 @@
 Digital TU Dublin is an interactive PHP project designed for tourists and visitors interested in exploring the Grangegorman campus of TU Dublin. This application allows users to learn about the history or nature of the campus through an engaging digital experience. Users begin their journey by scanning a QR code, with no registration required, and the site uses cookies for session management.
 
+Youtube Video Link: https://www.youtube.com/watch?v=Go1Zj1tqIpQ
+
 Features
 QR Code Entry: Start the journey by scanning the QR code at the campus entrance.
 No Registration Required: The application uses cookies for session tracking, eliminating the need for user registration.
