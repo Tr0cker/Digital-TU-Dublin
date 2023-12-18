@@ -10,20 +10,23 @@ Interactive Learning: On reaching different buildings, users can scan QR codes t
 Technical Focus:
 The project primarily demonstrates handling cookies in PHP for session management and user preferences.
 
-Getting Started:
-Clone Repository: Clone this repository to your local machine.
-Server Requirements: Ensure you have a PHP server (e.g., XAMPP, MAMP) set up.
-Database Setup: Import the provided SQL file to set up the necessary database tables.
-Configuration: Update the config.php file with your database and server details.
+Getting Started(in order to use this, you need to create a database first):
 
-Usage:
-Start the Tour: Visit the campus and scan the QR code at the entrance with your mobile device.
-Select Preferences: Choose your interest area (history/nature) and set your data retention preference.
-Explore: As you visit different buildings, scan the QR codes to access multimedia information.
+CREATE DATABASE IF NOT EXISTS tu_dublin;
+USE tu_dublin;
 
-Contributing:
-Feel free to fork this repository and submit pull requests for any enhancements.
-Report any issues or suggestions in the repository's 'Issues' section.
 
-Acknowledgments:
-Thanks to all contributors and TU Dublin for providing the resources for this project.
+CREATE TABLE IF NOT EXISTS user (
+    user_id INT AUTO_INCREMENT PRIMARY KEY
+    -- Add additional user fields here if needed
+);
+
+
+CREATE TABLE IF NOT EXISTS user_history (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    user_location VARCHAR(255),
+    user_experience VARCHAR(255),
+    user_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES user(user_id)
+);
