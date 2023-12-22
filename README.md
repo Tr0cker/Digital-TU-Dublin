@@ -12,6 +12,8 @@ Interactive Learning: On reaching different buildings, users can scan QR codes t
 Technical Focus:
 The project primarily demonstrates handling cookies in PHP for session management and user preferences.
 
+CSS library: i used nice page library/template since this project only focus on PHP part(my supervisors said css would not be graded)
+
 Getting Started(in order to use this, you need to create a database first):
 
 CREATE DATABASE IF NOT EXISTS tu_dublin;
